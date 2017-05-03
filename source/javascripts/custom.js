@@ -12,11 +12,10 @@ function initialize() {
   
     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
 
-    // var marker=new google.maps.Marker({
-    //   position:mapOptions[center],
-    //   animation:google.maps.Animation.BOUNCE
-    // });
-    // marker.setMap(map);
+    var marker = new google.maps.Marker({
+      position: {lat: 23.1131033, lng: 72.5982061},
+      map: map
+    });
 
     google.maps.event.addDomListener(map, 'idle', function() {
         calculateCenter();
@@ -34,7 +33,7 @@ function calculateCenter() {
 function loadGoogleMap(){
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key= AIzaSyCrxckNJnzd9Hxxje6ipz_ZXvsYc2EZnRo&' + 'callback=initialize';
     document.body.appendChild(script);
 }
 
