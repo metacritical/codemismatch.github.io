@@ -1,11 +1,7 @@
 #!/bin/bash
 
 rm -rf build
-git push origin master
-git checkout gh-pages
-git merge master
-git checkout  master
+git push origin development
 middleman build
 cp CNAME build/
-git push origin :gh-pages
 middleman deploy
