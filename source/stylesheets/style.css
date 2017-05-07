@@ -168,16 +168,17 @@ p{
   line-height: 60px;
 }
 #home h1.second_line{
-  color: #444;
+  color: #115883;
   line-height: 70px;
 }
 #home p{
   /*opacity: 0.4;*/
   font-size: 22px;
-  color: #115883;
+  color: #8E8E8E;
   line-height: 30px;
   margin-top: 20px;
 }
+p strong{color: #444;}
 #home .content{top: 40%;}
 #home h1.intro{}
 #home h1.avenir-light{}
@@ -189,19 +190,20 @@ p{
 }
 #services #slide1 h1 {
   color: #3C3C3C;
-  margin: 0 0 0 60px;
+  /*margin: 0 0 0 60px;*/
   padding-top: 40px;
   font-size: 80px;
   text-transform: uppercase;
 }
 #services #slide1 h3 {
   text-align: left;
-  margin-left: 65px;
+  /*margin-left: 65px;*/
   font-size: 5.5em;
   line-height: 60px;
+  color: #115883;
 }
 #services #slide1 .fa.fa-lightbulb-o {
-    font-size: 200px;
+    font-size: 550px;
     position: absolute;
     z-index: -1;
 }
@@ -215,19 +217,20 @@ p{
 #services #slide2 .content{width: 100%;padding: 0 13%;}
 #services #slide2 h1 {
   color: #3C3C3C;
-  margin: 0 0 0 60px;
+  /*margin: 0 0 0 60px;*/
   padding-top: 40px;
   font-size: 80px;
   text-transform: uppercase;
 }
 #services #slide2 h3 {
   text-align: left;
-  margin-left: 65px;
+  /*margin-left: 65px;*/
   font-size: 5.5em;
   line-height: 60px;
+  color: #115883;
 }
 #services #slide2 .fa.fa-flask {
-    font-size: 200px;
+    font-size: 550px;
     position: absolute;
     z-index: -1;
 }
@@ -246,6 +249,16 @@ p{
     margin-top: 20px;
 }
 #services #slide2 .stack{ margin-top: 90px;}
+#services #slide2 img {
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
+}
+#services #slide2 img:hover {
+  -webkit-filter: grayscale(0); /* Webkit */
+  filter: none; /* IE6-9 */
+  filter: grayscale(0); /* W3C */
+}
 /* Section 3
  * --------------------------------------- */
 #reason .content{width: 90%;padding: 0 13%;}
@@ -254,15 +267,16 @@ p{
 }
 #reason h1 {
     color: #3C3C3C;
-    margin: 0 0 0 60px;
+    /*margin: 0 0 0 60px;*/
     padding-top: 40px;
     font-size: 120px;
 }
 #reason h3 {
     text-align: left;
-    margin-left: 65px;
+    /*margin-left: 65px;*/
     font-size: 6em;
     line-height: 20px;
+    color: #115883
 
 }
 #reason p{
@@ -271,7 +285,7 @@ p{
   font-size: 20px;
 }
 #reason  .fa.fa-question {
-    font-size: 200px;
+    font-size: 550px;
     position: absolute;
     z-index: -1;
 }
@@ -292,7 +306,7 @@ p{
     width: 440px;
     color: #fff;
     z-index: 100;
-    background: #ccc;
+    background: #a7a4a4;
     top: 180px;
     left: 50px;
     padding: 15px;
@@ -306,6 +320,9 @@ p{
     font-size: 20px;
     margin-right: 20px;
 }
+.address  input.form-control{opacity: 0.8; margin-bottom: 10px; border-radius: 0;}
+.address textarea{opacity: 0.8; margin-bottom: 10px; border-radius: 0;}
+.address input[type = "submit"]{background: #115883;color: #fff;font-weight: 600;border:none; }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
