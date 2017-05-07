@@ -248,6 +248,11 @@ p strong{color: #444;}
     font-size: 25px;
     margin-top: 20px;
 }
+#services #slide2 p{
+  color: #8E8E8E;
+  font-size: 20px;
+  text-align: center;
+}
 #services #slide2 .stack{ margin-top: 90px;}
 #services #slide2 img {
   -webkit-filter: grayscale(1); /* Webkit */
@@ -259,6 +264,36 @@ p strong{color: #444;}
   filter: none; /* IE6-9 */
   filter: grayscale(0); /* W3C */
 }
+
+#services .content{width: 90%;padding: 0 13%;}
+#services{
+  background-color: #ffffff;
+}
+#services #slide3 h1 {
+  color: #3C3C3C;
+  /*margin: 0 0 0 60px;*/
+  padding-top: 40px;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+#services #slide3 h3 {
+  text-align: left;
+  /*margin-left: 65px;*/
+  font-size: 5.5em;
+  line-height: 60px;
+  color: #115883;
+}
+#services #slide3 .fa.fa-clock-o {
+    font-size: 550px;
+    position: absolute;
+    z-index: -1;
+}
+#services #slide3 p{
+  /*opacity: 0.8;*/
+  color: #8E8E8E;
+  font-size: 20px;
+}
+#services #slide3 p.first_pre{margin-top: 100px;}
 /* Section 3
  * --------------------------------------- */
 #reason .content{width: 90%;padding: 0 13%;}
